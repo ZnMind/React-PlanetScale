@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,21 +17,14 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .data-container {
   display: flex;
   justify-content: space-between;
   width: 49vw;
   border-left: 1px solid #61dafb;
   border-right: 1px solid #61dafb;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-container {
@@ -141,4 +123,45 @@ a {
 
 a:hover {
   color: #0066ff;
+}
+
+@media screen and (max-width: 480px) {
+  .header-container {
+    width: 80vw;
+  }
+
+  .data-container {
+    width: 80vw;
+  }
+
+  .data-box {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .paginationItem {
+    background: #fff;
+    border: 2px solid #888;
+    padding: 10px 15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin: 0 2.5px;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+
+  .prev,
+  .next {
+    background: #fff;
+    border: none;
+    border-radius: 0.5em;
+    padding: 5px;
+    color: black;
+    box-shadow: 0.5 0.5 3px rgba(0, 0, 0, 0.4);
+    margin: 0 5px;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
 }

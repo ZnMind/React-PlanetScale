@@ -32,7 +32,7 @@ const Pagination = props => {
   };
 
   return (
-    <div>
+    <div className='data-box'>
       <div className="header-box">
         <div className="box">
           {/* `Games : ${props.data.length}` */}
